@@ -4,12 +4,28 @@
     border: 1px solid var(---line);
 } */
 
+.cursor{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(---black);
+    background-color: #20202017;
+    position: fixed;
+    pointer-events: none;
+    transition: transform 0.1s ease;
+    z-index: 2;
+}
+
 .hover1{
     transition: color .5s ease;
 }
 
 .hover1:hover{
     color: var(---black);
+}
+
+a:hover{
+    cursor: none;
 }
 
 a.clickLink:hover{
@@ -23,6 +39,9 @@ a.clickLink:hover{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .cursor{
+        display: none;
+    }
     .greetings{
         flex-direction: column;
         width: 100%;

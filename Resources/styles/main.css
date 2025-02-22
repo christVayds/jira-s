@@ -29,6 +29,7 @@ body,html{
     color: var(---black);
     height: 100%;
     font-family: "Liter", serif;
+    cursor: none;
 }
 
 /* FONTS */

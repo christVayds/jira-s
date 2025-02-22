@@ -1,0 +1,50 @@
+
+/* for debugging and testing */
+/* .viewBox{
+    border: 1px solid var(---line);
+} */
+
+.hover1{
+    transition: color .5s ease;
+}
+
+.hover1:hover{
+    color: var(---black);
+}
+
+a.clickLink:hover{
+    text-decoration: underline;
+    color: var(---black);
+}
+
+.content.gallery .gallery-item:hover .info{
+    display: flex;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .greetings{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .greetings .sides{
+        width: 100%;
+    }
+
+    .content.text{
+        width: 100%;
+    }
+
+    .content.gallery{
+        flex-direction: column;
+    }
+
+    .content.gallery .gallery-item{
+        width: 100%;
+        height: 500px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}

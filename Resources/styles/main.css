@@ -1,0 +1,271 @@
+
+/* 
+
+
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Liter&family=Mystery+Quest&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    ---white: #d3d3d3;
+    ---white2: #7c7c7c;
+    ---black: #141414;
+    ---line: #ff04048e;
+    ---price: #c5ff79;
+    ---peso: #befcc1;
+
+    ---hover1: #77777733;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    font-size: 16px;
+    background-color: var(---white);
+    color: var(---black);
+    height: 100%;
+    font-family: "Liter", serif;
+}
+
+/* FONTS */
+
+/* liter regular */
+.liter-regular {
+    font-family: "Liter", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* sour gummy normal */
+.sour-gummy-normal {
+    font-family: "Sour Gummy", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+}
+
+/* mytery quest regular */
+.mystery-quest-regular {
+    font-family: "Mystery Quest", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* letter spacing */
+.letspace3{
+    letter-spacing: 3px;
+} 
+
+.letspace5{
+    letter-spacing: 5px;
+}  
+
+/* GLOBAL ELEMENTS */
+
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: var(---black);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(---white);
+}
+
+a{
+    text-decoration: none;
+    color: var(---black);
+}
+
+a.clickLink{
+    color: var(---white2);
+    padding: 5px;
+}
+
+h1 .large{
+    font-size: 3rem;
+}
+
+.logo-text{
+    font-size: 4rem;
+}
+
+/* flexed */
+.flexed{
+    display: flex;
+}
+
+.flexed.center{
+    justify-content: center;
+    align-items: center;
+}
+
+/* flex y directions */
+.flexed.y-bottom{
+    align-items: end;
+}
+
+.flexed.y-center{
+    align-items: center;
+}
+
+.flexed.y-left{
+    align-items: left;
+}
+
+.flexed.y-right{
+    align-items: right;
+}
+
+/* flex x and y directions */
+.flexed.centered{
+    align-items: center;
+    justify-content: center;
+}
+
+/* boxes */
+
+.center-box{
+    text-align: center;
+}
+
+.container{
+    min-height: 100%;
+    width: 100%;
+}
+
+/* elements */
+.greetings{
+    width: 50%;
+    height: 350px;
+}
+
+.greetings .sides{
+    padding: 10px;
+}
+
+.greetings .sides.logo{
+    width: 50%;
+}
+
+.greetings .sides.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.greetings .sides.title{
+    flex-grow: 1;
+}
+
+/* socials */
+.socials{
+    padding: 10px;
+}
+
+/* icons */
+.small-icons{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(---white2);
+    font-size: 1.5rem;
+}
+
+/* headers */
+.header{
+    padding: 10px;
+    font-size: 2rem;
+}
+
+/* Contents */
+.content{
+    padding: 10px;
+}
+
+.content.text{
+    width: 50%;
+    flex-direction: column;
+}
+
+.content .texts{
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.content .texts .trans-text{
+    font-size: .8rem;
+    color: var(---white2);
+}
+
+.content .img{
+    width: 200px;
+    height: 200px;
+}
+
+.content .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content.gallery .gallery-item{
+    position: relative;
+    border: 2px solid var(---hover1);
+    width: 25%;
+    height: 400px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.705) 0px 5px 8px;
+}
+
+.content.gallery .gallery-item img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.content.gallery .gallery-item .info{
+    position: relative;
+    height: 100%;
+    display: none;
+    align-items: end;
+    justify-content: start;
+    padding: 10px;
+    color: var(---white);
+    background: rgb(26,27,27);
+    background: linear-gradient(0deg, rgba(26,27,27,1) 0%, rgba(42,43,46,0.17690826330532217) 60%, rgba(255,0,254,0) 100%);
+}
+
+.content.gallery .gallery-item .info .newTag{
+    border: 1px solid var(---white);
+    border-radius: 50px;
+    width: 80px;
+    height: 40px;
+    padding: 10px;
+}
+
+.content.gallery .gallery-item .info .price{
+    color: var(---price);
+}
+
+.content.gallery .gallery-item .info .peso{
+    color: var(---peso);
+}

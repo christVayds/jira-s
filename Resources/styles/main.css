@@ -91,6 +91,9 @@ h1 .large{
 }
 
 .logo-text{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
     font-size: 4rem;
 }
 
